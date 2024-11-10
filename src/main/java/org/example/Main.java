@@ -14,7 +14,7 @@ public class Main {
         String[] commands = {
                 "gnome-terminal", "--wait", "--",
                 "bash", "-c",
-                "sudo apt update && sudo apt upgrade -y && sudo apt autopurge -y && sudo apt autoremove -y && sudo apt clean; exec bash"
+                "sudo apt update && sudo apt upgrade -y && sudo apt autopurge -y && sudo apt clean; exec bash"
         };
 
         try {
