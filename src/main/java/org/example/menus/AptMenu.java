@@ -2,17 +2,15 @@ package org.example.menus;
 
 import org.example.tools.APT;
 
-import java.util.Scanner;
-
 public class AptMenu extends Menu{
-    public static void showAptMenu(Scanner scanner) {
+    public void show() {
         int aptChoice;
 
         while (true) {
-            System.out.println("\nAPT Operations:");
-            System.out.println("[1] Update");
-            System.out.println("[2] Other");
-            System.out.println("[0] Return to main menu");
+            System.out.println("\n>> apt operations:");
+            System.out.println("\t[1] Update");
+            System.out.println("\t[2] Other");
+            System.out.println("\t[0] Return to main menu");
 
             aptChoice = scanner.nextInt();
             scanner.nextLine(); // consume the newline character
