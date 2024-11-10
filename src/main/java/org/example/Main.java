@@ -1,9 +1,9 @@
 package org.example;
 
-import org.example.tools.*;
+import org.example.menus.MainMenu;
 
 public class Main {
     public static void main(String[] args) {
-        APT.update();
+        MainMenu.show();
     }
 }
