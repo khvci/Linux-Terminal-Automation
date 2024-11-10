@@ -1,24 +1,21 @@
 package org.example.menus;
 
-import static org.example.menus.AptMenu.showAptMenu;
-
 public class MainMenu extends Menu{
-    public static void show() {
-//        Scanner scanner = new Scanner(System.in);
+    public void show() {
         int mainChoice;
 
         while (true) {
-            System.out.println("Select what you need:");
-            System.out.println("[1] apt");
-            System.out.println("[2] other operations");
-            System.out.println("[0] close terminal and exit program");
+            System.out.println("\n> main menu");
+            System.out.println("\t[1] apt");
+            System.out.println("\t[2] other operations");
+            System.out.println("\t[0] close terminal and exit program");
 
             mainChoice = scanner.nextInt();
             scanner.nextLine(); // consume the newline character
 
             switch (mainChoice) {
                 case 1:
-                    showAptMenu(scanner);
+                    new AptMenu().show();
                     break;
                 case 2:
                     System.out.println("Other operations not yet implemented.");
